@@ -1,0 +1,24 @@
+.products {
+    margin-top: 20px;
+    &__title {
+        font-size: 2em;
+        &--inline {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+    &__filter {
+        margin-left: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: .25rem;
+        font-size: 1em;
+        padding: .25rem
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: -5px;
+        max-width: 100%;
+    }
+}

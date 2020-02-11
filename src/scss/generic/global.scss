@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+$white: #fff;
+$black: #000;
+$red: #eb2f06;
+$blue: #1e3799;
+$blue-hover: #0c2461;
+$green: #38ada9;
+$green-hover: #079992;
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    // font-size: 62.5%;
+}
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    @include rwd('laptop') {
+        margin: 0 5px;
+    }
+}
