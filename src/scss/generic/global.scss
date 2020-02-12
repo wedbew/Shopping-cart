@@ -9,13 +9,12 @@ $green-hover: #079992;
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    box-sizing: border-box;
     // font-size: 62.5%;
 }
 
 .container {
     max-width: 1260px;
-    width: 100%;
-    box-sizing: border-box;
     margin: 0 auto;
     @include rwd('laptop') {
         margin: 0 5px;

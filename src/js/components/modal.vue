@@ -1,7 +1,7 @@
 <template>
-  <div v-if="isOpen" class="modal">
+  <div v-if="isOpen" class="modal" @keyup.esc="isOpen = false" tabindex="0">
     <div class="modal__wrapper">
-      <button @click="isOpen = false" @keyup.esc="isOpen = false" class="modal__close btn">&times;</button>
+      <button @click="isOpen = false" class="modal__close btn">&times;</button>
       <h2 class="modal__title">Do you want to remove this item from cart?</h2>
       <div class="modal__buttons">
         <button @click="confirm" class="btn btn--primary">Yes</button>
